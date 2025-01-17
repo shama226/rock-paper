@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="card">
+    <h1>Choose Your move</h1>
+      <img src="assets/rock.webp" width="100" (click)="Myfun('rock')">
+      <img src="assets/paper.webp" width="100" (click)="Myfun('paper')">
+      <img src="assets/scissor.jpeg" width="100" (click)="Myfun('scissor')">
+
+    <h2>computer has choosen:{{computer}}</h2>
+    <h2>{{result}}</h2>
+    <div id="score">
+      <h3>user: {{user_score}}</h3>
+      <br>
+      <h3>computer: {{computer_score}}</h3>
+    </div>
+    <button (click)="ResetGame()">Reset</button>
+  </div>
+</div>
